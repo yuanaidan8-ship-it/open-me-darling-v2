@@ -396,19 +396,25 @@ body {
 }
 
 .play-btn {
-  margin-top: 1.75rem;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  margin: 1.75rem auto 0;   /* <-- eto ang importante */
+
+  border: none;
+  border-radius: 50%;
+
   color: white;
   background: linear-gradient(to bottom right, var(--rose-400), var(--rose-gold-deep));
+
   box-shadow: 0 10px 30px rgba(232,95,138,0.5);
+
   cursor: pointer;
-  transition: filter 0.2s, transform 0.1s;
+  transition: filter .2s, transform .1s;
 }
 
 .play-btn:hover {
