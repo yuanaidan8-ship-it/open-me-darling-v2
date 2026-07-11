@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Open Me, Darling ❤️</title>
+  <meta name="description" content="A private little love letter, made just for you." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= PASSWORD PAGE ================= -->
+  <section id="page-password" class="page active">
+    <div class="bg-photo-blur bg-photo-password"></div>
+    <div class="overlay-gradient overlay-password"></div>
+    <div class="floating-hearts" id="hearts-password"></div>
+
+    <div class="glass-card glow-ring password-card">
+      <p class="title-script">Hellloowwwww eto surprise ko sayo :> </p>
+      <p class="subtitle">I made something for you.</p>
+
+      <form id="password-form">
+        <label for="password-input" class="sr-only">Password</label>
+        <input
+          id="password-input"
+          type="password"
+          inputmode="numeric"
+          autocomplete="off"
+          placeholder="Enter the password"
+        />
+        <button type="submit" class="btn-primary">Open Me ❤️</button>
+      </form>
+
+      <p id="password-error" class="error-text"></p>
+    </div>
+  </section>
+
+  <!-- ================= INTRO PAGE ================= -->
+  <section id="page-intro" class="page">
+    <div class="intro-bg"></div>
+    <div class="floating-hearts" id="hearts-intro"></div>
+    <p id="intro-text" class="title-script intro-text">
+      <span id="intro-typed"></span><span class="caret">|</span>
+    </p>
+  </section>
+
+  <!-- ================= MUSIC PAGE ================= -->
+  <section id="page-music" class="page">
+    <div class="bg-photo-blur" style="background-image: url('photo2.jpeg')"></div>
+    <div class="overlay-gradient overlay-music"></div>
+    <div class="floating-hearts" id="hearts-music"></div>
+
+    <div class="glass-card music-card" id="music-card">
+      <p class="title-script small">This song reminds me of you.</p>
+
+      <div class="vinyl-wrap">
+        <div class="vinyl-plate">
+          <div class="vinyl-disc" id="vinyl-disc">
+            <div class="vinyl-label">
+              <div class="vinyl-hole"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="song-title">Iris</p>
+      <p class="song-artist">Goo Goo Dolls</p>
+
+      <button id="play-btn" class="play-btn" aria-label="Play song">
+        <svg id="icon-play" viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="icon-pause" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+
+      <button id="music-next" class="link-btn">Continue our story →</button>
+    </div>
+
+    <audio id="bg-audio" src="iris.mp3" loop></audio>
+  </section>
+
+  <!-- ================= MEMORIES PAGE ================= -->
+  <section id="page-memories" class="page">
+    <div class="memories-bg"></div>
+
+    <p class="title-script memories-heading">A few of my favorite moments with you</p>
+
+    <div class="polaroid-list" id="polaroid-list">
+      <!-- populated by JS -->
+    </div>
+
+    <div class="center-btn-wrap">
+      <button id="memories-next" class="btn-primary"> But wait there's more :>❤️</button>
+    </div>
+  </section>
+
+  <!-- ================= LETTER PAGE ================= -->
+  <section id="page-letter" class="page">
+    <div class="letter-bg"></div>
+    <div class="floating-hearts" id="hearts-letter"></div>
+
+    <div class="glass-card letter-card">
+      <p class="title-script small">A letter, just for you</p>
+      <pre id="letter-text" class="letter-text"></pre>
+      <p id="letter-error" class="error-text"></p>
+      <div class="center-btn-wrap" id="letter-next-wrap" style="display:none">
+        <button id="letter-next" class="btn-primary">Wait, there's more...</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BIRTHDAY SURPRISE PAGE ================= -->
+  <section id="page-birthday" class="page">
+    <div class="dark-radial-bg"></div>
+    <div class="floating-hearts" id="hearts-birthday"></div>
+
+    <p id="birthday-text" class="title-script birthday-text"></p>
+
+    <button id="birthday-next" class="btn-outline">Click to continue</button>
+  </section>
+
+  <!-- ================= FINAL GIFT PAGE ================= -->
+  <section id="page-gift" class="page">
+    <div class="gift-bg"></div>
+    <div class="floating-hearts" id="hearts-gift"></div>
+    <div class="sparkles" id="sparkles"></div>
+
+    <p id="gift-heading" class="title-script gift-heading">One little gift, just for you.</p>
+
+    <button id="gift-box" class="gift-box-btn" aria-label="Open gift">
+      <div class="gift-lid" id="gift-lid"></div>
+      <div class="gift-body" id="gift-body">
+        <div class="gift-ribbon-v"></div>
+        <div class="gift-ribbon-h"></div>
+        <span id="gift-heart" class="gift-heart">❤️</span>
+      </div>
+    </button>
+
+    <p id="gift-hint" class="hint-text">Tap the box to open it</p>
+    <p id="gift-final-text" class="gift-final-text" style="display:none">Forever and always, yours. ❤️</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
