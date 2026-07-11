@@ -362,7 +362,7 @@ function initGiftPage() {
       box.classList.remove('shaking');
       lid.classList.add('opened');
       heart.classList.add('visible');
-      heading.textContent = "Happy Monthsary, my love \u2014 and happy birthday to me, because you're my favorite gift.";
+      heading.textContent = "Happy Monthsary, DARLINGGG KOOOOOO MWA MWA CHUPCHUP and happy birthday to me, because you're my favorite gift.";
       hint.style.display = 'none';
       finalText.style.display = 'block';
     },
